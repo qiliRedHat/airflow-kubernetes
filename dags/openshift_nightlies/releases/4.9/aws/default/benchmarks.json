@@ -8,18 +8,18 @@
         {
             "name": "cluster_density",
             "workload": "kube-burner",
-            "command": "./run_clusterdensity_test_fromgit.sh",
+            "command": "./ingress-performance.sh",
             "env": {
-                "JOB_ITERATIONS": "500",
-                "JOB_TIMEOUT": "18000",
-                "STEP_SIZE": "30s",
-                "QPS": "20",
-                "BURST": "20",
-                "METRICS_PROFILE": "metrics-aggregated.yaml",
-                "LOG_LEVEL": "info",
-                "LOG_STREAMING": "true",
-                "CLEANUP_WHEN_FINISH": "true",
-                "CLEANUP": "true"
+                "ES_INDEX": "router-test-results",
+                "RUNTIME": "60",
+                "SAMPLES": "2",
+                "TERMINATIONS": "http",
+                "KEEPALIVE_REQUESTS": "0",
+                "HOST_NETWORK": "true",
+                "SMALL_SCALE_ROUTES": "100",
+                "SMALL_SCALE_CLIENTS": "1",
+                "ENGINE": "local",
+                "NODE_SELECTOR": "{node-role.kubernetes.io/workload: }"
             }
         }
     ]
