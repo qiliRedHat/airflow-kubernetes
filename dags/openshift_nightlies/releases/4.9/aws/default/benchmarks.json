@@ -6,7 +6,7 @@
             "command": "./baseline_perf.sh"            
         },
         {
-            "name": "cluster_density",
+            "name": "router-perf",
             "workload": "kube-burner",
             "command": "./ingress-performance.sh",
             "env": {
