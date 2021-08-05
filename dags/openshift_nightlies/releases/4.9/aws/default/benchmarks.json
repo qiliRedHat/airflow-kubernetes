@@ -7,7 +7,7 @@
         },
         {
             "name": "router-perf",
-            "workload": "kube-burner",
+            "workload": "router-perf-v2",
             "command": "./ingress-performance.sh",
             "env": {
                 "ES_INDEX": "router-test-results",
