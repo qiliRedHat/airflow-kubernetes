@@ -14,7 +14,8 @@
                 "SMALL_SCALE_ROUTES": "100",
                 "SMALL_SCALE_CLIENTS": "1",
                 "ENGINE": "local",
-                "NODE_SELECTOR": "{node-role.kubernetes.io/workload: }"
+                "NODE_SELECTOR": "{node-role.kubernetes.io/workload: }",
+                "EMAIL_ID_FOR_RESULTS_SHEET": "qili@redhat.com"
             }
         }
     ]
