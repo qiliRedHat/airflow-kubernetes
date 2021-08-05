@@ -1,11 +1,6 @@
 {
     "benchmarks": [
         {
-            "name": "baseline",
-            "workload": "baseline-performance",
-            "command": "./baseline_perf.sh"            
-        },
-        {
             "name": "router-perf",
             "workload": "router-perf-v2",
             "command": "./ingress-performance.sh",
