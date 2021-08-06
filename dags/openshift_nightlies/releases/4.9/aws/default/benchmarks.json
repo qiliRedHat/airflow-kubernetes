@@ -1,7 +1,7 @@
 {
     "benchmarks": [
         {
-            "name": "router-perf",
+            "name": "router-perf-mix",
             "workload": "router-perf-v2",
             "command": "./ingress-performance.sh",
             "env": {
@@ -12,14 +12,14 @@
                 "KEEPALIVE_REQUESTS": "0 1 50",
                 "HOST_NETWORK": "true",
                 "SMALL_SCALE_ROUTES": "100",
-                "SMALL_SCALE_CLIENTS": "1",
+                "SMALL_SCALE_CLIENTS": "1 20 80",
                 "ENGINE": "local",
                 "NODE_SELECTOR": "{node-role.kubernetes.io/workload: }",
                 "EMAIL_ID_FOR_RESULTS_SHEET": "qili@redhat.com"
             }
         },
         {
-            "name": "router-perf",
+            "name": "router-perf-http",
             "workload": "router-perf-v2",
             "command": "./ingress-performance.sh",
             "env": {
@@ -27,10 +27,10 @@
                 "RUNTIME": "60",
                 "SAMPLES": "2",
                 "TERMINATIONS": "http",
-                "KEEPALIVE_REQUESTS": "0",
+                "KEEPALIVE_REQUESTS": "0 1 50",
                 "HOST_NETWORK": "true",
                 "SMALL_SCALE_ROUTES": "100",
-                "SMALL_SCALE_CLIENTS": "1",
+                "SMALL_SCALE_CLIENTS": "1 40 200",
                 "ENGINE": "local",
                 "NODE_SELECTOR": "{node-role.kubernetes.io/workload: }",
                 "EMAIL_ID_FOR_RESULTS_SHEET": "qili@redhat.com"
