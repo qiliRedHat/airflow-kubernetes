@@ -18,6 +18,28 @@
                 "NODE_SELECTOR": "{node-role.kubernetes.io/workload: }",
                 "EMAIL_ID_FOR_RESULTS_SHEET": "qili@redhat.com"
             }
+        },
+        {
+            "name": "max-service",
+            "workload": "kube-burner",
+            "command": "./run_maxservices_test_fromgit.sh",
+            "env": {
+                "SERVICE_COUNT": "600",
+                "METRICS_PROFILE": "metrics-aggregated.yaml",
+                "CLEANUP_WHEN_FINISH": "true",
+                "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "max-namespace",
+            "workload": "kube-burner",
+            "command": "./run_maxnamespaces_test_fromgit.sh",
+            "env": {
+                "NAMESPACE_COUNT": "100",
+                "METRICS_PROFILE": "metrics-aggregated.yaml",
+                "CLEANUP_WHEN_FINISH": "true",
+                "CLEANUP": "true"
+            }
         }
     ]
 }
