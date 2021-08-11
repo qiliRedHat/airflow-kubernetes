@@ -20,7 +20,6 @@ platforms:
       providers:
       - name: gcp
         profiles:
-        - default
         - sdn-routerperf-upgrade
     - version: 4.8
       releaseStream: 4.8.0-0.nightly
