@@ -1,25 +1,6 @@
 {
     "benchmarks": [
         {
-            "name": "router-perf",
-            "workload": "router-perf-v2",
-            "command": "./ingress-performance.sh",
-            "env": {
-                "ES_INDEX": "router-test-results",
-                "RUNTIME": "60",
-                "SAMPLES": "2",
-                "TERMINATIONS": "http edge passthrough reencrypt mix",
-                "KEEPALIVE_REQUESTS": "0 1 50",
-                "HOST_NETWORK": "true",
-                "SMALL_SCALE_ROUTES": "100",
-                "SMALL_SCALE_CLIENTS": "1 20 80",
-                "SMALL_SCALE_CLIENTS_MIX": "1 20 80",
-                "ENGINE": "local",
-                "NODE_SELECTOR": "{node-role.kubernetes.io/workload: }",
-                "EMAIL_ID_FOR_RESULTS_SHEET": "qili@redhat.com"
-            }
-        },
-        {
             "name": "upgrades",
             "workload": "upgrade-perf",
             "command": "./run_upgrade_fromgit.sh",
