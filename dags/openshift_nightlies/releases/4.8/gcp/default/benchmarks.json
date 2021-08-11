@@ -1,0 +1,15 @@
+{
+    "benchmarks": [
+        {
+            "name": "upgrades",
+            "workload": "upgrade-perf",
+            "command": "./run_upgrade_fromgit.sh",
+            "env": {
+                "LATEST": "true",
+                "CHANNEL": "nightlies",
+                "TIMEOUT": "400",
+                "POLL_INTERVAL": "10"
+            }
+        }
+    ]
+}
