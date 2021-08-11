@@ -15,6 +15,13 @@ dagConfig:
 
 platforms:
   cloud:
+    - version: 4.7
+      releaseStream: 4.7.0-0.nightly
+      providers:
+      - name: gcp
+        profiles:
+        - default
+        - sdn-routerperf-upgrade
     - version: 4.8
       releaseStream: 4.8.0-0.nightly
       providers:
@@ -53,8 +60,6 @@ platforms:
   openstack:
     - version: 4.7
       releaseStream: 4.7.0-0.nightly
-      profiles:
-      - default
     - version: 4.8
       releaseStream: 4.8.0-0.nightly
       profiles:

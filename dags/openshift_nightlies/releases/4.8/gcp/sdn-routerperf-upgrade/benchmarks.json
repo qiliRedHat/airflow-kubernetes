@@ -6,7 +6,7 @@
             "command": "./run_upgrade_fromgit.sh",
             "env": {
                 "LATEST": "true",
-                "CHANNEL": "nightlies",
+                "CHANNEL": "4.9.0-0.nightly",
                 "TIMEOUT": "400",
                 "POLL_INTERVAL": "10"
             }
