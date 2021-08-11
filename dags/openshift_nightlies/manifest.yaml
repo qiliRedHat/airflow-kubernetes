@@ -50,16 +50,3 @@ platforms:
         profiles:
         - default
         - sdn-routerperf
-  baremetal: 
-    - version: 4.8
-      releaseStream: latest-4.8
-      build: dev
-      profiles:
-      - jetski
-  openstack:
-    - version: 4.7
-      releaseStream: 4.7.0-0.nightly
-    - version: 4.8
-      releaseStream: 4.8.0-0.nightly
-      profiles:
-      - default
