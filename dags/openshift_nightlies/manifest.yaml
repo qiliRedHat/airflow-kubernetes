@@ -28,6 +28,7 @@ platforms:
       - name: gcp
         profiles:
         - default
+        - sdn-routerperf-upgrade
     - version: 4.9
       releaseStream: 4.9.0-0.nightly
       providers:
@@ -35,12 +36,14 @@ platforms:
         profiles:
         - default
         - ovn
+        - sdn-routerperf-maxservice-maxnamespace
       - name: azure
         profiles:
         - default
       - name: gcp
         profiles:
         - default
+        - sdn-routerperf
   baremetal: 
     - version: 4.8
       releaseStream: latest-4.8
