@@ -33,20 +33,16 @@ platforms:
         - default
       - name: gcp
         profiles:
-        - default
         - sdn-routerperf-upgrade
     - version: 4.9
       releaseStream: 4.9.0-0.nightly
       providers:
       - name: aws
         profiles:
-        - default
-        - ovn
         - sdn-routerperf-maxservice-maxnamespace
       - name: azure
         profiles:
-        - default
+        - sdn-routerperf-maxservice-maxnamespace
       - name: gcp
         profiles:
-        - default
         - sdn-routerperf

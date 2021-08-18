@@ -5,7 +5,7 @@
             "workload": "upgrade-perf",
             "command": "./run_upgrade_fromgit.sh",
             "env": {
-                "LATEST": "true",
+                "VERSION": "4.8.0",
                 "CHANNEL": "stable-4.8",
                 "TIMEOUT": "400",
                 "POLL_INTERVAL": "10"
