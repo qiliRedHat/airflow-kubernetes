@@ -42,7 +42,7 @@ platforms:
         - sdn-routerperf-maxservice-maxnamespace
       - name: azure
         profiles:
-        - sdn-routerperf-maxservice-maxnamespace
+        - sdn-scaleci
       - name: gcp
         profiles:
         - sdn-routerperf
