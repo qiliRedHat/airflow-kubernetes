@@ -19,7 +19,7 @@ platforms:
       releaseStream: 4.7.0-0.nightly
       providers:
       - name: gcp
-      profiles:
+        profiles:
         - sdn-upgrade
     - version: 4.8
       releaseStream: 4.8.0-0.nightly
