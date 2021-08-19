@@ -20,30 +20,27 @@ platforms:
       providers:
       - name: gcp
         profiles:
-        - sdn-routerperf-upgrade
+        - sdn-upgrade
     - version: 4.8
       releaseStream: 4.8.0-0.nightly
       providers:
       - name: aws
         profiles:
-        - default
-        - ovn
       - name: azure
         profiles:
-        - default
       - name: gcp
         profiles:
-        - sdn-routerperf-upgrade
+        - sdn-upgrade
     - version: 4.9
       releaseStream: 4.9.0-0.nightly
       providers:
       - name: aws
         profiles:
-        - sdn-routerperf-maxservice-maxnamespace
+        - sdn-scaleci
       - name: azure
         profiles:
-        - default
         - sdn-scaleci
+        - ovn-scaleci
       - name: gcp
         profiles:
-        - sdn-routerperf
+        - sdn-scaleci
