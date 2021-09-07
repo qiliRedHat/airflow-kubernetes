@@ -40,3 +40,4 @@ platforms:
       - name: gcp
         profiles:
         - sdn-scaleci
+        - ovn-cluster-density
