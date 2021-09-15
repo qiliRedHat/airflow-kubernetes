@@ -39,5 +39,6 @@ platforms:
         - ovn-scaleci
       - name: gcp
         profiles:
+        - ad-hoc
         - sdn-scaleci
         - ovn-cluster-density
