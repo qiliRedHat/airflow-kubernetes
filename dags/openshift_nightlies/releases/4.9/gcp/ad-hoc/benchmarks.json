@@ -5,28 +5,10 @@
             "workload": "scale-perf",
             "command": "./run_scale_fromgit.sh",
             "env": {
-                "SCALE": "50",
+                "SCALE": "4",
                 "METADATA_COLLECTION": "true",
                 "WORKLOAD_NODE_ROLE": "workload"
             }
-        },
-        {
-            "name": "cluster_density",
-            "workload": "kube-burner",
-            "command": "./run_clusterdensity_test_fromgit.sh",
-            "env": {
-                "JOB_ITERATIONS": "200",
-                "JOB_TIMEOUT": "18000",
-                "STEP_SIZE": "30s",
-                "QPS": "20",
-                "BURST": "20",
-                "METRICS_PROFILE": "metrics-aggregated.yaml",
-                "LOG_LEVEL": "info",
-                "LOG_STREAMING": "true",
-                "ES_SERVER": "https://ocp-qe:Dog8code!@search-ocp-qe-perf-scale-test-elk-hcm7wtsqpxy7xogbu72bor4uve.us-east-1.es.amazonaws.com",
-                "ES_INDEX": "router-test-results",
-                "WORKLOAD_NODE": "{node-role.kubernetes.io/workload: }"
-                }
         }
     ]
 }
